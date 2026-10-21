@@ -7,5 +7,6 @@ unique_ids:
     Layouts.BaseLayout: K2GN2Z3JRCW7QCFUEWWMOJEGA6R3CGAW
   modules:
     Layouts: EOV7GFXCWEFILGB3TKF6E32FD4WI2CYA
-  scripts: {}
+  scripts:
+    Script: '1792598609126203701305333.73343'
   server_modules: {}
