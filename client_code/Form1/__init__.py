@@ -1,5 +1,6 @@
 from ._anvil_designer import Form1Template
 from anvil import *
+import anvil.server
 
 
 class Form1(Form1Template):
@@ -7,6 +8,9 @@ class Form1(Form1Template):
     super().__init__(**properties)
 
   @handle("location_search", "change")
-  def location_search_change(self, **event_args):
-    """This method is called when the text in this text box is edited"""
-    pass  # Write Code Here
+  def enable_search_btn(self, **event_args):
+    self.search_btn.enabled = self.location_name.test != "" and self.location_search.text != ""
+
+  @handle("search_btn", "click")
+  def search_for_location(self, **event_args):
+    
